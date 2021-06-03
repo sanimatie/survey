@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Een Enquête</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<main>
+<h1 id="title">Een onderwerp voor een enquête</h1>
+<p id="description">Deze enquête bevat willekeurige vragen. Veel plezier!</p>
+<form id="survey-form">
+  <label for="name" id="name-label" >Naam</label><br class="phone-break">
+  <input id="name" required type=text placeholder="naam"><br class="phone-break"><br class="phone-break">
+  <label for="email" id="email-label" >Email</label><br class="phone-break">
+  <input id="email" type="email" placeholder="email" required><br class="phone-break"><br class="phone-break">
+  <label for="number" id="number-label">Leeftijd</label><br class="phone-break">
+  <input id="number" type="number" placeholder="leeftijd" min="1" max="150">
+  <br><br>
+  <label for="dropdown">Wat vind je van deze enquête?</label><br class="phone-break">
+  <select id="dropdown" name="dropdown">
+    <option value="tijdverspilling">tijdverspilling</option>
+    <option value="optie2">optie 2</option>
+    <option value="optie3">optie 3</option>
+  </select>
+  <br><br>
+  <fieldset>
+    <legend>Hoe is je dag?</legend>
+  <input id="goed" type="radio" name="dag" value="goed">
+    <span class="radio"></span>
+  <label for="goed">goed</label><br class="phone-break">
+  <input id="matig" type="radio" name="dag" value="matig">
+    <span class="radio"></span>
+  <label for="matig">matig</label><br class="phone-break">
+  <input id="slecht" type="radio" name="dag" value="slecht">
+    <span class="radio"></span>
+  <label for="slecht">slecht</label><br class="phone-break">
+  <input id="praten" type="radio" name="dag" value="nietpraten">
+    <span class="radio"></span>
+  <label for="praten">ik wil er niet over praten</label>
+  </fieldset><br>
+  <fieldset>
+    <legend>Dit is een vraag met meerdere antwoorden</legend>
+    <input id="antwoord" type="checkbox" name="checkbox" value="antwoord">
+    <label for="antwoord">Een antwoord</label><br class="phone-break">
+    <input id="antwoord2" type="checkbox" name="checkbox" value="antwoord2">
+    <label for="antwoord2">Nog een antwoord</label><br class="phone-break">
+    <input id="antwoord3" type="checkbox" name="checkbox" value="antwoord3">
+    <label for="antwoord3">Laatste antwoord</label>
+  </fieldset><br>
+  <label for="overig">Wil je verder nog iets kwijt?</label>
+  <br><br>
+  <textarea id="overig" type="text" placeholder="lucht je hart hier" rows="10" cols="100"></textarea>
+  <br><br>
+  <button id="submit" type="submit">versturen</button>
+</form>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
